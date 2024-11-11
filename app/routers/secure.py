@@ -12,7 +12,7 @@ router = APIRouter()
 
 logger = logging.getLogger("uvicorn")
 ollama_client = AsyncClient(host=settings.ollama_host)
-model = "llama3.2"
+model = settings.model_name
 
 
 @router.get("/")

@@ -1,7 +1,5 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI
 from fastapi.params import Depends
-from fastapi.responses import StreamingResponse
-import httpx
 
 from app.auth import get_allowed
 from app.routers import public, secure
